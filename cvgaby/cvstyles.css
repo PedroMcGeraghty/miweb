@@ -1,0 +1,370 @@
+/* Globales */
+*{
+    margin:0px; padding: 0px;
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    background-color: white; 
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lato';
+    
+}
+
+/* Displey grid */
+
+.grid{
+    display: block;
+}
+
+.main{
+    width: 90%;
+    margin: auto ;
+    margin-bottom: 2rem;
+}
+
+.cajas {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    margin: auto;
+    width: 30rem;
+    display: flex; 
+}
+
+.footer__hijo{
+    margin-right:2rem;
+}
+
+@media (min-width : 600px) {
+    .main{
+        width: 78rem;
+        margin: auto ;
+        margin-bottom: 2rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr); 
+        align-items: center;
+    }
+
+    .footer{
+        display: flex;
+        width: 78rem;
+        margin: auto; 
+    }
+
+    
+    .footer__hijo{
+        margin-right:2rem;
+    }
+    
+    .footer__hijo p {
+        font-size: 1.5rem;
+    }
+    
+    .cajas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 26rem;
+    }
+}
+
+
+
+/* Home */
+
+
+.objetivoslaborales{
+    background-color: rgba(255, 255, 0, 0.30);  
+    font-size:1300%;
+    color: darkgrey;    
+}
+
+.objetivoslaborales:hover{
+background-color: yellow; 
+color: white;
+}
+
+.objetivoslaborales:visited{
+    background-color: black;
+}
+
+.datospersonales{
+    font-size: 20rem;
+    color: darkgrey;
+    background: rgba(0, 216, 255, 0.30);
+}
+
+.datospersonales:hover{
+    background-color: rgb(0, 216, 255); 
+    color: white;
+}
+
+.estudios{
+    font-size: 1300%;
+    color: darkgrey;
+    background-color: rgba(255, 0, 177, 0.30);
+}
+
+.estudios:hover{
+    background-color: rgb(255, 0, 177); color: white;
+}  
+
+.referencias{ 
+    font-size: 1300%;
+    color: darkgrey;
+    line-height: 17,5rem;
+    background-color: rgba(0, 139, 255, 0.30);
+}
+
+.referencias:hover{
+    background-color: rgb(0, 139, 255);
+    color: white;
+} 
+
+.miscelaneas{
+    background-image: url(IMAGENES/BOTONESHOME/BOTONeligeuncolor-02.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.miscelaneas:hover {
+    background-image: url(IMAGENES/BOTONESHOME/BOTONcorazondetiza-03.png);  
+}
+
+.miscelaneas:visited{
+    background-color: aquamarine;
+}
+
+.estudiosextras{   
+    font-size: 1300%; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+.estudiosextras:hover{
+    background-color: rgb(0, 0, 0);
+    color: darkgray;
+} 
+
+.experienciaextra{  
+    font-size: 1300%; 
+    color: darkgrey;
+    background-color: rgba(129, 1, 196, 0.30);
+}
+.experienciaextra:hover{
+    background-color: rgb(129, 1, 196); 
+    color: white;
+} 
+
+.diseñofreelance{ 
+    font-size: 1700%; 
+    color: white;
+    background-color: rgba(255, 165, 0, 0.30);
+}
+.diseñofreelance:hover{
+    background-color: rgb(255, 165, 0); 
+    color: darkgrey;
+} 
+
+.experiencialaboral{    
+     font-size: 1000%;
+     background-color: rgba(21, 190, 60, 0.30);
+}
+
+.experiencialaboral:hover{
+    background-color: rgb(21, 190, 60);
+}
+
+
+
+h2{
+    font-family: 'Lato', sans-serif;  
+}
+
+.contenedor {
+    width: 90rem;
+    margin:auto ;
+}
+
+.contenedor__fondo { 
+    width: 30rem; 
+    height: 30rem; 
+    position: absolute;
+    background-repeat: no-repeat;
+}
+    
+.flex {
+    width: 60rem;
+    padding: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex__titulo {
+    color: darkgrey;
+    margin: 5rem 0rem 5rem;
+    z-index: 1;
+    }
+
+.flex__titulo h2 {
+    font-size: 2.4rem;
+    font-family: 'Lato' , sans-serif;
+    font-weight: 100;
+}
+
+
+.flex__items ul{
+    width: 25rem;
+    background-color: rgba(200, 200, 200, 0);
+    font-family:'Lato',sans-serif;
+    line-height: 2rem; 
+    color: darkgrey;
+    z-index: 1;
+    margin-left: 10rem;
+}
+
+.flex__items li {
+    font-size: 1.4rem;
+    list-style-type:disc ;
+    font-weight: 100;
+}
+
+.boton{           
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+    }
+
+.logo{
+    height: 4rem;
+   }
+
+/* Objetivos Laborales */
+
+.fondo1{
+    background-image:url(IMAGENES/PAGINASSEC/1objetivolaboral-01.png);  
+}  
+
+/* Datos Personales */
+
+.fondo2{
+    background-image: url(IMAGENES/PAGINASSEC/2datospersonales-02.png);
+}
+
+/* Estudios */
+
+.fondo3{ 
+   background-image:url(IMAGENES/PAGINASSEC/3estudios-03.png);
+}
+
+/* Referencias */
+
+.fondo4 {
+    background-image: url(IMAGENES/PAGINASSEC/4referencias-04.png);
+}
+
+/* Miscelaneas */
+
+.fondo5{
+    background-image:url(IMAGENES/PAGINASSEC/5miscelaneas-05.png); 
+}
+
+/* Extracurriculares */
+
+.fondo6{
+    background-image:url(IMAGENES/PAGINASSEC/6extracurriculares-06.png);
+}
+
+/* Experienias Extras */
+
+.fondo7{
+    background-image:url(IMAGENES/PAGINASSEC/7experienciaextra-07.png);
+}
+
+.lamparas{
+    width: 25rem; 
+    height: 30rem;
+    background-color: rgba(150, 100, 150,0);
+}
+
+.flex2{
+    display: flex;
+}
+
+.flex2__items {
+    background-color: rgba(200, 200, 200, 0);
+    font-family:'Lato',sans-serif;
+    line-height: 2rem; 
+    color: darkgrey;
+    margin: auto; 
+    z-index: 1;
+    width: 30rem;
+}
+
+.flex2__items li {
+    font-size: 1,2rem;
+}
+
+/* Diseño free lancer */
+
+.fondo8{
+    background-image: url(IMAGENES/PAGINASSEC/8diseñofreelance-08.png);
+}
+
+.flex3{
+    display: flex;
+    flex-direction:row;
+    width: 50rem;
+    margin-top: 0.5rem;
+}
+
+.flex3__items{
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    font-size:1.1rem ;
+}
+
+.flex3__imagen{
+    width: 100%;
+}
+
+.contenedor2{
+   width: 55rem; 
+   position: relative;
+}
+
+.contenedor2__imagen{
+    width: 100%;
+}
+
+.contenedor2__text{
+    position: absolute;
+    top: 21rem; 
+    font-size:1.1rem ;
+}
+
+.freelance2{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+
